@@ -122,6 +122,7 @@ int i, escolha;
 			printf("\t\t matricula tecle 1 \n");
 			printf("\t\t nota tecle 2 \n");
 			printf("\t\t nome tecle 3 \n");
+			printf("\t\t tecle 4 para voltar ao menu inicial \n");
 			printf("\t\t tecle 0 para sair \n");
 		scanf("%d", &escolha);
 		
@@ -138,14 +139,17 @@ int i, escolha;
 			bubbleSortNome(pessoas, 3);
 			break;
 			
+			case 4 :
+				menu();
+			break;
+			
 			default :
 				printf("saindo");
 		}
 	} while (escolha!=0);
 }
-int main(int argc, char *argv[]) {
-		
-		int escolha;		
+	void menu() {
+			int escolha;		
 			printf("\t escolha qual tipo de ordenacao voce quer usar \n\n");
 			printf("\t\t bubble sort tecle 1 \n");
 			printf("\t\t insertion sort 2 \n");
@@ -167,6 +171,10 @@ int main(int argc, char *argv[]) {
 			default :
 				printf("valor invalido");
 		}
+	}
+int main(int argc, char *argv[]) {
+		menu();
+	
 	getch();
 	return 0;
 }
