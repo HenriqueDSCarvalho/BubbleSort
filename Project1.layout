@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 [Editors]
 Order=0
 Focused=0
@@ -6,3 +7,13 @@ CursorCol=4
 CursorRow=37
 TopLine=19
 LeftChar=1
+=======
+[Editors]
+Order=0
+Focused=0
+[Editor_0]
+CursorCol=4
+CursorRow=37
+TopLine=19
+LeftChar=1
+>>>>>>> 69709476c85dc81af704d0f66e41323d151d555c
